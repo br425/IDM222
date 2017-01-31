@@ -1,0 +1,212 @@
+html {
+	font-size: 100%;
+	background-color: lightblue;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+.section h3, p {font-size: 150%;}
+
+div {
+	border-radius: 5px;
+}
+#nav {width: 100%}
+
+#nav a {
+    color: blue;
+    transition: background-color 0.6s ease-in-out;
+	text-decoration-style: none;
+}
+
+#nav a:hover { 
+	color: red; 
+}
+
+
+#container {
+	background color: blue;
+}
+
+#nav {
+	height: 3rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	background-color: darkgray;
+	padding: 1rem;
+}
+
+#nav h3 {
+	padding: 0;
+}
+
+h1, h2, h3 {
+	padding: .5rem;
+}
+
+.home {
+	font-size: 1.5rem;
+	margin-bottom: .5rem;
+}
+
+.section {
+	padding: 1rem;
+	margin-bottom: 3rem; 
+	background-color: black;
+}
+
+.thumbnail {
+	width: 7rem;
+}
+
+.index-direct {
+	margin: 10rem 0 0 10%;
+	width: 75%;
+	height: 10rem;
+}
+
+.front div {
+	z-index: 0;
+	margin: 0 auto;
+}
+
+.title  h1{
+	z-index: 10;
+	margin-bottom: -11rem;
+}
+
+#benrodia-big {
+	font-size: 5rem;
+	color: silver;
+}
+
+figcaption {
+	font-size: 4rem;
+	color: white;
+	margin: -10% 0 20%;
+}
+
+.section h1, .section h2, .section h3, .section p {
+	color: white;
+}
+ 
+#galaccordian {
+	height: 1.5rem;
+	width: 6rem;
+	overflow: hidden;
+}
+
+#aboutaccordian {
+	height: 1.5rem;
+	width: 4rem;
+	overflow: hidden;
+}
+
+#galaccordian:hover {
+	height: 100%;
+}
+
+#aboutaccordian:hover {
+	height: 100%;
+}
+
+
+@media screen and (min-width: 20rem) {
+	body {
+		background-color: green;
+	}
+
+	#nav h3 {
+		float: left;
+	}
+	#nav div {	
+		float: left;
+		padding: .3rem;
+	}
+
+	#container {
+		padding-top: 3rem;
+	}
+
+	.thumbnail {
+		width: 11rem;
+	}
+} 
+
+@media screen and (min-width: 40rem) {
+	body {
+		background-color: red;
+	}
+	.section h3, p {font-size: 130%;}
+
+	#nav {
+		height: auto;
+		width: 8rem;
+	}
+	#nav div {	
+		padding: .3rem 0 .3rem .7rem ;
+	}
+	#container {
+		margin: 0 1rem 0 9rem;
+	}
+
+	#galaccordian {
+		height: 1.5rem;
+		width: auto;
+		overflow: hidden;
+	}
+
+	#aboutaccordian {
+		height: 1.5rem;
+		width: auto;
+		overflow: hidden;
+	}
+
+	#galaccordian:hover {
+		height: 100%;
+	}
+
+	#aboutaccordian:hover {
+		height: 100%;
+	}
+
+	.index-direct {
+	height: 15rem;
+}
+
+
+} 
+
+@media screen and (min-width: 60rem) {
+	body {
+		background-color: yellow;
+	}
+	.section h3, p {font-size: 110%;}
+
+	#nav {
+		width: 8rem;
+	}
+	#container {
+		margin: 0 9rem;
+	}
+	.thumbnail {
+		width: 15rem;
+	}
+	.index-direct {
+	height: 20rem;
+}
+
+} 
+
+@media screen and (min-width: 80rem) {
+	.thumbnail {
+		width: 19rem;
+	}
+	.index-direct {
+	height: 25rem;
+}
+}
