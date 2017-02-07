@@ -1,0 +1,89 @@
+html{
+	top: 0;
+	left: 0;
+	background-color: black;
+	font-family: 'Merriweather','Slabo 27px', serif;
+}
+
+body {	
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #cc0000;
+	font-style: italic;
+}
+
+h1 {
+	margin-top: -1%;
+}
+
+img {
+	float: left;
+	margin: 5% 1% 1% 10%;
+	width: 49%;
+}
+
+
+.little {
+	margin: -10px 0;
+	width: 80%;
+}
+
+.text {
+	position: fixed;
+	right: 10%;
+	top: 1%;
+	float: right;
+	color: #cccccc;
+	max-width: 28%;
+	margin:1%;
+}
+
+.carousel {
+	z-index: 10;
+	color: #cccccc;
+	font-size: 3em;
+	background-color: rgba(100,0,0, .8);
+	padding: 10px;
+	opacity: .2;
+ }
+
+.back:hover {
+	opacity: 1;
+	transition: .5s;
+}
+.last:hover {
+	opacity: 1;
+	transition: .5s;
+}
+.next:hover {
+	opacity: 1;
+	transition: .5s;
+}
+
+.back {
+	font-size: 2em;
+	position: fixed;	
+	top: 0;
+	left: 10%;
+	margin: 0 auto;
+	padding: .5% 15%;
+	border-radius: 0 0 30px 30px;
+}
+.next {
+	position: fixed;	
+	top: 3%;
+	right: 0;
+	padding: 20% .5%;
+	border-radius: 30px 0 0 30px;
+}
+.last {
+	position: fixed;	
+	top: 3%;
+	left: 0;
+	padding: 20% .5%;
+	border-radius: 0 30px 30px 0;
+}
