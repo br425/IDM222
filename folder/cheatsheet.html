@@ -1,3 +1,5 @@
+<!-- Grid Systems -->
+
 <div class="row">
 	<div class="col-1"></div>
 	<div class="col-1"></div>
@@ -41,6 +43,10 @@
 </div>
 
 
+<!-- Responsive Images -->
+
+
+<!-- Method 1 -->
 <source srcset="small.jpg 360px, 
 			medium.jpg 640px,
 			large.jpg 1024px" 
@@ -48,12 +54,18 @@
 	src="" 
 	alt="">
 
+
+<!-- Method 2 -->
+
 <picture>
 	<source media="(min-width: 1024px)" srcset="large.jpg">
 	<source media="(min-width: 678px)" srcset="medium.jpg">
 	<source media="(min-width: 360px)" srcset="small.jpg">
 	<img src="" alt="">
 </picture>
+
+
+<!-- Method 3 -->
 
 <picture>
 	<source media="(min-width: 800px)"
@@ -68,3 +80,37 @@
 				image-medium.jpg,
 				image-large.jpg">
 </picture>
+
+
+<!-- Flex Box -->
+
+<div class="flex-container">
+	<div class="flex-item"></div>
+	<div class="flex-item"></div>
+	<div class="flex-item"></div>
+	<div class="flex-item"></div>
+	<div class="flex-item"></div>
+</div>
+
+<style>
+.flex-container {
+	display: flex;
+	flex-direction: row | row-reverse | column | column-reverse;
+	flex-wrap: nowrap | wrap | wrap-reverse;
+	flex-flow: flex-direction | flex-wrap;
+	justify-content: flex-start | flex-end | center | space-between | space-around;
+	align-items: flex-start | flex-end | center | stretch | baseline;
+	align-content: flex-start | flex-end | center | space-between | space-around;
+}
+
+.flex-item {
+	order: <integer>;
+	flex-grow: <integer>; /*default 0*/
+	flex-shrink: <integer>; /*default 0*/
+	flex-basis: <length in units> | auto;
+	flex: <'flex-grow'> <'flex-shrink'> <'flex-basis'>;
+	align-self: <override container settings for this item>;
+}
+<cannot float, clear, or vertical align flexboxes>
+
+</style>

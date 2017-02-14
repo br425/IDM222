@@ -1,203 +1,225 @@
+/*GENERAL*/
+
 html {
   font-size: 100%;
-  background-color: lightblue;
+  background-color: #12779b;
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-.centered {
-  align-content: center;
-  text-align: center; 
+header {
+  flex-flow: column wrap;
+  background: transparent;
 }
 
-#nav {
-  background-color: silver;
+header a {
+  color: white;
+  background: #380600;
+  display: block;
+  padding: .2em;
+  text-align: center;
+  border-radius: 0 0% 20% 20%;
 }
 
-#nav h3 {
-  padding: 0;
+header a:hover {
+  background: maroon;
+  box-shadow: 2px 2px 3px rgba(200,200,100,.5);
 }
 
-h1, h2, h3 {
-  padding: .5rem;
-}
-
-.home {
-  font-size: 1.5rem;
-  margin-bottom: .5rem;
+aside {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
 }
 
 .section {
-  padding: 0;
-  margin-bottom: 3rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	margin-top: 2rem;	
 }
 
-.thumbnail {
-  min-width: 32%;
-  max-width: 99%;
-  margin: .5%;
+.section h2 {
+	background-color: #23384c;
+	color: white;
+	flex: 1 0 100%;
+	padding: 1rem;
+	border-radius: 0 50% 50% 0;
+	max-width: 80%;
 }
 
-.front-text {
-  z-index: 10;
-  font-size: 3rem;
+.section a {
+	margin: 0 .5rem 1rem .5rem;
 }
 
-.front-img {
-  z-index: 0;
-  width: 100%;
+.section-text {
+	background-color: #23384c;
+	color: white;
+	padding-top: 5%;
+}
+
+.section-text h2 {
+	padding: 1rem;
+	text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+	background-color: #002c5b;
+	border-radius: 0 20% 50% 0;
+	font-size: 2rem;
+	min-width: auto;
+	max-width: 30%;
+	padding-bottom: 10%;
+	margin-bottom: -9%;
+}	
+
+p {
+	padding: .5rem 1rem;
+	text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+}
+
+
+footer {
+	margin: 1rem;
+	text-align: right;
+}
+
+aside {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#home-container {
+	background-color: #002c5b;
+	border-radius: 0 0 100% 0;
+}
+.benrodia {
+	padding: 1rem;
+	color: white;
+	font-size: 3rem;
+}
+.front {
+	width: 100%;
+	padding: 1rem 0;
+}
+
+.front .img{
+	width: 100%;
+}
+
+.front .text {
+	width: 100%;
+	background-color: #23384c;
+	color: white;
+	padding-left: 2rem;
+}
+
+.front a:hover {
+	color: maroon;
+}
+
+
+.description {
+	color: white;
+	background: #23384c;
 }
 
 .carousel {
-  height: 100%;
-  width: 100%;
-  background-color: red;
+	color: white;
+	font-size: 1.5rem;
+	background-color: #380600;
+	height: 10%;
+	text-align: center;
 }
 
-.aboutparg {
-  padding: 1rem;
+.carourel:hover {
+	background: maroon;
+	box-shadow: 2px 2px 3px rgba(200,200,100,.5);
 }
 
-.benrodia {
-  font-size: 5rem;
-  color: silver;
+#blowup-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 }
-
-#galaccordian:hover, #aboutaccordian:hover {
-  height: 100%;
-}
-
+.last, .next {flex-grow: 1;}
+.back {flex-grow: 3;}
 
 /*MEDIA QUERIES*/
 
-@media screen and (min-width: 20rem) {
-  body {
-    background-color: green;
-  }
 
-  #nav {  
-    width: 100%;
-  }
-  .thumbnail {
-/*    width: 11rem;
-*/  }
+@media screen and (min-width: 30rem) {        /*TABLET*/
+	#container {
+		padding-top: 3%;
+	}
+	header {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		background: #380600;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%
+	}	
+
+	header a {
+		border: none;
+		background: transparent;
+	}
+
+	.section {
+		margin: 2rem 0;
+	}
+
+	.section h2 {
+		border-radius: 0 20% 50% 0;
+		font-size: 2rem;
+		max-width: 30%;
+		padding-bottom: 30%;
+		margin-bottom: -28%;
+	}	
+
+
+	.front {
+	width: 50%;
+}
+	.front .img{
+	width: 100%;
+	padding: 0 1rem;
+}
+	#blowup-page {
+		display: block;
+	}
+	.blowup {
+		width: 60%;
+	}
+	}
+
+	.description {
+		position: fixed;
+		top: 6%;
+		right: 0;
+		width: 40%;
+		height: 95%;
+	}
 } 
 
-@media screen and (min-width: 40rem) {
-  body {
-    margin-top: 0;
-    background-color: red;
-  }
-  .section h3, p {font-size: 130%;}
 
-  #nav div {  
-    padding: .3rem 0 .3rem .7rem ;
-  }
-  #container {
-    margin: 0 1rem 0 9rem;
-  }
-  #galaccordian, #aboutaccordian {
-    height: 1.5rem;
-    width: auto;
-    overflow: hidden;
-  }
-
-  #galaccordian:hover, #aboutaccordian:hover {
-    height: 100%;
-  }
-
-} 
-
-@media screen and (min-width: 60rem) {
-  body {
-    background-color: yellow;
-  }
-  .section h3, p {font-size: 110%;}
-
-  .thumbnail {
-/*    width: 15rem;
-*/  }
-} 
-
-@media screen and (min-width: 80rem) {
-  .thumbnail {
-/*    width: 19rem;
-*/  }
+@media screen and (min-width: 50rem) {        /*DESKTOP*/
+	header {
+	}
+	.front .img{
+	width: 80%;
+	padding: 0 1rem;
+}
 }
 
-
-/*GRID SYSTEM*/
-
-* { box-sizing: border-box; }
-
-.row {
-  height: auto;
-  overflow: auto;
-  margin-bottom: 16px;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-[class*="col-"] {
-  background-color: rgba(45, 157, 192, 0.5); /*GRID OPACITY*/
-  margin: 0 .5%;
-  width: 100%;
-}
-
-
-@media screen and (min-width: 600px) {
-  .col-1 {width: 7.33%;}
-  .col-2 {width: 15.66%;}
-  .col-3 {width: 24%;}
-  .col-4 {width: 32.33%;}
-  .col-5 {width: 40.66%;}
-  .col-6 {width: 49%;}
-  .col-7 {width: 57.33%;}
-  .col-8 {width: 65.66%;}
-  .col-9 {width: 74%;}
-  .col-10 {width: 82.33%;}
-  .col-11 {width: 90.66%;}
-  .col-12 {width: 99%;}
-
-  [class*="col-"] {
-    float: left;
-  }
-}
-
-
-/*IGNORE FOR NOW*/
-  .column-1 {width: 7.33%;}
-  .column-2 {width: 15.66%;}
-  .column-3 {width: 24%;}
-  .column-4 {width: 32.33%;}
-  .column-5 {width: 40.66%;}
-  .column-6 {width: 49%;}
-  .column-7 {width: 57.33%;}
-  .column-8 {width: 65.66%;}
-  .column-9 {width: 74%;}
-  .column-10 {width: 82.33%;}
-  .column-11 {width: 90.66%;}
-  .column-12 {width: 99%;}
-
-[class*="column-"] {
-  background-color: rgba(45, 45, 145, 0.0); /*GRID OVERLAY OPACITY*/
-  margin: 0 .5%;
-  height: 100%;
-  float: left;
-  clear: both;
-  overflow: auto;
-}
-
-.row .column-1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
+@media screen and (min-width: 80rem) {        /*HDTV*/
 }
