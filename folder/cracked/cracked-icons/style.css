@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'cracked-ico';
+  src:  url('fonts/cracked-ico.eot?tm1cxy');
+  src:  url('fonts/cracked-ico.eot?tm1cxy#iefix') format('embedded-opentype'),
+    url('fonts/cracked-ico.ttf?tm1cxy') format('truetype'),
+    url('fonts/cracked-ico.woff?tm1cxy') format('woff'),
+    url('fonts/cracked-ico.svg?tm1cxy#cracked-ico') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cracked-ico' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gplus-icon:before {
+  content: "\e908";
+}
+.hamburger-icon:before {
+  content: "\e909";
+}
+.login-icon:before {
+  content: "\e918";
+}
+.pinterest-icon:before {
+  content: "\e919";
+}
+.search-icon:before {
+  content: "\e91a";
+}
+.twitter-icon:before {
+  content: "\e91e";
+}
+.youtube-icon:before {
+  content: "\e91f";
+}
+.bubbles-icon:before {
+  content: "\e96d";
+}
+.play-icon:before {
+  content: "\ea15";
+}
+.up-icon:before {
+  content: "\ea41";
+}
+.facebook-icon:before {
+  content: "\ea91";
+}
+.rss-icon:before {
+  content: "\ea9b";
+}
+.tumblr-icon:before {
+  content: "\eaba";
+}
+
