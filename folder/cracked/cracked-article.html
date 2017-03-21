@@ -6,27 +6,34 @@
   <title>Cracked Home</title>
   <link rel="stylesheet" href="cracked.css">
   <link href="https://fonts.googleapis.com/css?family=Cantora+One|Droid+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body id="article-page">
 	
 <div id="wrapper">
+
 	<header>
-		<div class="icon" ><span class="icon hamburger-icon"></span><!-- <img id="hamburger" src="images/menu-icon.png" alt="Menu"> --></div>
+
+<!-- 		<span class="icon hamburger-icon hide-desktop"></span>
+ -->		<span class="icon hamburger-icon"><img src="images/menu-icon.png" alt="Hamburger"></span>
+
 		<a href="index.html" id="logo">
 		<img src="images/cracked-com-logo.png" alt="Cracked Logo">
 		<p class="hide-mobile hide-tablet">America's only humor site since 1958</p>
 		</a>
+		
 		<ul id="nav">
 			<li><a href="cracked-article.html" class="nav-tab">Articles</a></li>
-			<li><a href="" class="nav-tab">Videos</a></li>
-			<li><a href="" class="nav-tab smaller">Photoplasty</a></li>
-			<li><a href="" class="nav-tab smaller">Columnists</a></li>
-			<li><a href="" class="nav-tab">Topics</a></li>
-			<li><a href="" class="nav-tab">Forums</a></li>
-			<li><a href="" class="nav-tab">Store</a></li>
-			<li><a href="" class="nav-tab">Misc.</a></li>
+			<li><a href="cracked-article.html" class="nav-tab">Videos</a></li>
+			<li><a href="cracked-article.html" class="nav-tab smaller">Photoplasty</a></li>
+			<li><a href="cracked-article.html" class="nav-tab smaller">Columnists</a></li>
+			<li><a href="cracked-article.html" class="nav-tab">Topics</a></li>
+			<li><a href="cracked-article.html" class="nav-tab">Forums</a></li>
+			<li><a href="cracked-article.html" class="nav-tab">Store</a></li>
+			<li><a href="cracked-article.html" class="nav-tab">Misc.</a></li>
 		</ul>
+		
 		<div id="social">
 			<a class="hide-mobile" href="https://www.facebook.com/cracked" target="_blank"><span class="icon fb-icon"></span></a>
 			<a class="hide-mobile" href="https://twitter.com/cracked" target="_blank"><span class="icon twitter-icon"></span></a>
@@ -36,9 +43,13 @@
 
 			<div class="hide-mobile hide-tablet" id="write-for-us">Write For Us!</div>
 		</div>
+
 			<form id="searchBox" action="submit">
 
 				<input type="search" class="search-bar" placeholder="Search Cracked.com">
+				
+				<span id="search-submit" class="icon search-icon"></span>
+			
 			<select class="drop-menu" name="Topics">
 				  <option value="default">Topics</option>
 				  <option value="movies">Movies and TV</option>
@@ -61,10 +72,59 @@
 				  <option value="personal">Personal Esperiences</option>
 			</select>
 
-				<button class="search-submit">Search</button>
+				<!-- <button class="search-submit">Search</button> -->
 			</form>
-	</header>
+			<div id="hamburger-menu">
+				
+				<ul id="ham-links">
+			<li><a href="cracked-article.html" class="nav-tab">Articles</a></li>
+			<li><a href="" class="nav-tab">Videos</a></li>
+			<li><a href="" class="nav-tab smaller">Photoplasty</a></li>
+			<li><a href="" class="nav-tab smaller">Columnists</a></li>
+			<li><a href="" class="nav-tab">Topics</a></li>
+			<li><a href="" class="nav-tab">Forums</a></li>
+			<li><a href="" class="nav-tab">Store</a></li>
+			<li><a href="" class="nav-tab">Misc.</a></li>
+		</ul>				
+		<ul id="ham-social">
+			<li><a target="_blank" href="https://www.facebook.com/cracked"><span class="icon fb-icon"></span></a></li>
+			<li><a target="_blank" href="https://twitter.com/cracked"><span class="icon twitter-icon"></span></a></li>
+			<li><a target="_blank" href="https://www.youtube.com/user/cracked?sub_confirmation=1"><span class="icon youtube-icon"></span></a></li>
+			<li><a target="_blank" href="https://plus.google.com/+cracked"><span class="icon gplus-icon"></span></a></li>
+			<li><a target="_blank" href="https://www.instagram.com/cracked/"><span class="icon rss-icon"></span></a></li>
+			<li><a target="_blank" href="http://cracked.tumblr.com/"><span class="icon tumblr-icon"></span></a></li>
+			<li><a target="_blank" href="https://www.pinterest.com/cracked/"><span class="icon pinterest-icon"></span></a></li>
+				</ul>
+		<a href="#links" id="to-footer">Go to Footer</a>
 
+	</div>
+	
+	</header>
+	<div id="contact-bg">
+		<div id="contact-box">
+			<h2>Contact Us</h2>
+			<p>Think you got what it takes to write for Cracked.com?</p>
+			<p>Then submit an article or some other pieces of content.</p>
+
+		<span id="x-icon"><img src="images/x-icon.png" alt="eXit" class="x-icon"></span>
+		<h3>Contact us about anything else...</h3>
+		<select name="" id="contact-select">
+			<option value="">General Comments</option>
+			<option value="">Video Comments</option>
+			<option value="">Recommend a Link</option>
+			<option value="">Funny Idea</option>
+			<option value="">Technical Problems</option>
+			<option value="">Subscription Questions</option>
+			<option value="">Advertising Questions</option>
+		</select>
+			<form action="">
+				<input class="name" type="text" placeholder="Your Name">
+				<input class="email" type="text" placeholder="Your Email">
+				<input class="leave" class="leave-comment" type="text" placeholder="Comments">
+				<input class="post" type="submit">
+			</form>
+		</div>
+	</div>
 
 	<div id="float-menu">
 		<ul id="float-social">
@@ -74,30 +134,42 @@
 
 			<li><a target="_blank" href="https://plus.google.com/+cracked"><span class="icon gplus-icon"></span></a></li>
 		</ul>
+			<a href="#top"><span class="icon up-icon"></span></a>			
 		<ul id="float-nav">
-			<li><a href="#top"><span class="icon up-icon"></span></a></li>			
-			<li><a href="#5">#5...</a></li>
-			<li><a href="#4">#4...</a></li>
-			<li><a href="#3">#3...</a></li>
-			<li><a href="#2">#2...</a></li>
-			<li><a href="#1">#1...</a></li>
-			<li><a href="#comment-section"><span class="icon bubbles-icon"></span></a></li>
+			<li><a id="number-5" href="#5">#5 <!-- The Producers of Se7en --></a></li>
+			<li><a id="number-4" href="#4">#4 <!-- Close Encounters of the --></a></li>
+			<li><a id="number-3" href="#3">#3 <!-- The Director of The Sopranos --></a></li>
+			<li><a id="number-2" href="#2">#2 <!-- The Shawshank Redemption --></a></li>
+			<li><a id="number-1" href="#1">#1 <!-- Stanley Kubrick Wanted 2001 --></a></li>
 		</ul>
+			<a href="#comment-section"><!-- <span class="icon bubbles-icon"></span> <--><img src="images/bubble-icon.png" alt="comments" class="to-comments"></a>
 	</div>
 
+<img id="BG" src="images/wood-texture-bg2.jpg" alt="wood-texture-bg2">
 	<main>
 	<div id="article-content">
 	<div id="article-head">			
 			<div class="head-pic"></div>
-				<h1>10 Insane Things You Didn't Know About Shit You Loved as a Kid</h1>
+				<h1>5 Insane Things You Didn't Know About Shit You Loved as a Kid</h1>
+				<ul id="author">
+					<li>By Robert Brockway</li>
+					<li>March 16 2017</li>
+					<li>803,554 views</li>
+					<li>324 comments</li>
+
+				</ul>
 	</div>
 
+
+		<div class="article-content-box">
 		<p id="5" class="article-p">
 			In an alternate universe, every good movie or TV show you can think of is objectively terrible. It only takes one piece of terrible advice; one yes-man too weak to nix a creator's stupid impulse; one errant studio executive saying "I love it! But... giant mechanical spider?" -- and your favorite movie is only good for a RiffTrax. For example ...
 		</p>
+
+		</div>
+		<div class="article-number-5"><span class="huge">#5</span><h2> The Producers Of Se7en Wanted To Get Rid Of The Big Twist</h2></div>
 		
-		<h2>#5. The Producers Of Se7en Wanted To Get Rid Of The Big Twist</h2>
-		
+		<div class="article-content-box">
 		<p class="article-p">
 			In the climactic scene of Se7en, villain John Doe (Kevin Spacey) delivers a box to rookie detective David Mills (Brad Pitt) that contains the decapitated head of his wife Tracy (Gwyneth Paltrow) in order to bait Mills into killing him, thus completing his murderous, biblically themed performance piece.
 		</p>
@@ -118,9 +190,14 @@
 
 		<p id="4" class="article-p">Sure, John Wick proves that could have worked, maybe, after some extensive reshooting with additional scenes to highlight how much Mills really, really, fucking loved his dog (do you remember him even having a dog in that movie?) but in the end Pitt convinced them to go with the original vision, and a classic was made. Albeit one that nets you some funny looks if you list it as "your favorite movie."
 		</p>
+		</div>
+
+		<div class="article-number-4">
+		<span class="huge">#4</span>
+		<h2> Close Encounters Of The Third Kind Almost Featured Orangutans on Roller Skates</h2>
+		</div>
 		
-		<h2>#4. Close Encounters Of The Third Kind Almost Featured Orangutans on Roller Skates</h2>
-		
+		<div class="article-content-box">
 		<p class="article-p">
 			Steven Spielberg is the founding father of the big-budget summer blockbuster, and he loves him some aliens. In his 1977 hit, Close Encounters Of The Third Kind, he knew that he didn't want his aliens to look like people in silly costumes -- this was a serious piece, not befitting a guy in a rubber suit.
 		</p>
@@ -140,9 +217,11 @@
 		<figure class="article-fig"><img src="images/cap-img-4.jpg" alt="Relavent Image 4">
 		<figcaption id="3">"So we just saved the monkeys for Indy 4."</figcaption>
 		</figure>
+		</div>
 		
-		<h2>#3. The Director Of The Sopranos Wanted Bruce Springsteen's Guitarist For The Lead</h2>
-
+		<div class="article-number-3"><span class="huge">#3</span><h2> The Director Of The Sopranos Wanted Bruce Springsteen's Guitarist For The Lead</h2></div>
+		
+		<div class="article-content-box">
 		<p class="article-p">TV series creator David Chase came up with the idea for The Sopranos because he was a massive, massive, nerd for Goodfellas. In fact, he initially wanted Ray Liotta to play a key character, but Liotta declined, saying that doing TV was "a step backward." Of course, this was 1999 -- it's hard to imagine Liotta declining a TV role today because he's too big of a movie star.
 		</p>
 		
@@ -165,14 +244,16 @@
 		<img src="images/cap-img-7.jpg" alt="Relavent Image 7">
 		<figcaption>For our younger readers, Family Guy was a low-rated, short-lived, Fox cartoon cancelled in 2002.</figcaption>
 		</figure>
+		</div>
 
 
-		<img id="2" class="strip" src="images/ad-strip.jpg" alt="Adspace">
+		<img id="2" class="strip" src="images/ad-strip-1.JPG" alt="Adspace">
 
 
-		<h2>#2. The Shawshank Redemption Was Almost A Rob Reiner Movie Starring Tom Cruise
-		</h2>
+		<div class="article-number-2"><span class="huge">#2</span><h2> The Shawshank Redemption Was Almost A Rob Reiner Movie Starring Tom Cruise
+		</h2></div>
 
+		<div class="article-content-box">
 		<p class="article-p">The Shawshank Redemption is one of the greatest films of all time. Which is strange, since it has so much going against it: For one thing, it's a Stephen King story, and although several King adaptations have been masterpieces, just playing by sheer numbers, they mostly turn out terrible. For another, it's directed by Frank Darabont, whose credentials at the time were basically "being a huge Stephen King fan."
 		</p>
 		
@@ -187,10 +268,12 @@
 		
 		<p id="1" class="article-p">Despite Castle Rock offering Darabont, in his words, "a shitload of dough" to hand the project over to Reiner, Darabont figured that maybe Top Gun himself wasn't "every man" enough to play protagonist Andy Dufresne, so Darabont rejected all offers until he was finally allowed to direct the movie. Ultimately, the role was offered to Tim Robbins, who was uh... considered way more "every man" back then.
 		</p>
+		</div>
+
+		<div class="article-number-1"><span class="huge">#1</span><h2> Stanley Kubrick Wanted 2001: A Space Odyssey To Be Full Of Stupid Aliens
+		</h2></div>
 		
-		<h2>#1. Stanley Kubrick Wanted 2001: A Space Odyssey To Be Full Of Stupid Aliens
-		</h2>
-		
+		<div class="article-content-box">
 		<p class="article-p">For 2001: A Space Odyssey, Stanley Kubrick partnered up with legendary science-fiction writer Arthur C. Clarke in order to do sci-fi properly. In the original vision, Kubrick wanted an alien named Clindar, who "could pass for a human with some surgery," to star as the entity that teaches early humans how to use technology. As the script progressed, Clarke eventually convinced Kubrick to replace the role of Clindar with an inanimate monolith. According to preliminary designs, Clindar was supposed to look something like this:
 		</p>
 
@@ -208,29 +291,49 @@
 		<p class="article-p">
 		Jordan Breeding is a part-time writer, a full-time lover, and an all-the-time guitarist. Check out his band at http://www.skywardband.com, or on Spotify here. Billy Fitzsimmons is a freelance writer, check out his awesome articles here.
 		</p>
+		</div>
 
 		
 		
-		<img class="promo" src="images/cap-img-10.jpg" alt="Relavent promo image">
+	<!-- 	<img class="promo" src="images/cap-img-10.jpg" alt="Relavent promo image">
 
-		<h5>It's Spring Break! You know what that means: hot coeds getting loose on the beaches of Cancun and becoming imperiled in all classic beach slasher ways: man-eating shark, school of piranhas, James Franco with dreadlocks. There are so many films about vacations gone wrong, it's a chore to wonder if there's even such a thing as a movie vacation gone right. Amity Island and Camp Crystal Lake are out. So what does that leave? The ship from Wall-E? Hawaii with the Brady Bunch? A road trip with famous curmudgeon Chevy Chase? On this month's live podcast Jack O'Brien and the Cracked staff are joined by some special guest comedians to figure out what would be the best vacation to take in a fictional universe. Tickets are $7 and can be purchased here!</h5>
+		<h5>It's Spring Break! You know what that means: hot coeds getting loose on the beaches of Cancun and becoming imperiled in all classic beach slasher ways: man-eating shark, school of piranhas, James Franco with dreadlocks. There are so many films about vacations gone wrong, it's a chore to wonder if there's even such a thing as a movie vacation gone right. Amity Island and Camp Crystal Lake are out. So what does that leave? The ship from Wall-E? Hawaii with the Brady Bunch? A road trip with famous curmudgeon Chevy Chase? On this month's live podcast Jack O'Brien and the Cracked staff are joined by some special guest comedians to figure out what would be the best vacation to take in a fictional universe. Tickets are $7 and can be purchased here!</h5> -->
 
-		<p class="article-p"></p>
 	</div>
+		<div class="section">
+			<h1 class="section-title">Recommended For You</h1>
+			<h2 class="see-more">See More</h2>
+			<a href="cracked-article.html" class="thumbnail">
+				<div class="tn" id="tn-7"></div>
+<!-- 				<span class="icon play-icon"></span>
+ -->				<div class="caption">22 Surprisingly Surreal Scenes From Your Own Home Planet</div>
+				<div class="cap-stats">Views Author upvotes</div>
+			</a>			
+			<a href="cracked-article.html" class="thumbnail">
+				<div class="tn" id="tn-8"></div>
+<!-- 				<span class="icon play-icon"></span>
+ -->				<div class="caption">8 WTF New Movies No One Is Talking About (February 2017)</div>
+				<div class="cap-stats">Views Author upvotes</div>
+			</a>			
+			<a href="cracked-article.html" class="thumbnail hide-mobile hide-tablet">
+				<div class="tn" id="tn-9"></div>
+<!-- 				<span class="icon play-icon"></span>
+ -->				<div class="caption">6 Real Inventions That Would Seem Over The Top In A Movie</div>
+				<div class="cap-stats">Views Author upvotes</div>
+			</a>	
+	</div>
+
+
+
 	<div id="comment-section">
-		<div id="about-writer">
+		<!-- <div id="about-writer">
 			<div class="com-head">
 			<img src="images/login-icon.png" alt="Writer's Picture">
 			<a href=""><h3>Felix Clay</h3></a>
 			<a class="like" href="">Like</a>
 			<a class="follow" href="">Follow</a>
 			</div>
-		</div>
-		<form id="add-comment">
-			<input class="type-comment" type="text" placeholder="Type your comment here">
-			<p class="com-date">To turn on reply notifications, <a href="">click here</a>.</p>
-			<button class="submit">Submit Comment</button>
-		</form>
+		</div> -->
 		<div class="comment-stats">
 			<h2>214 Comments</h2>
 			<button class="stats">Recent</button>
@@ -238,58 +341,89 @@
 			<button class="stats">You</button>
 			<button class="stats">Show Profanity</button>
 		</div>
+		<form id="add-comment">
+			<input class="type-comment" type="text" placeholder="Type your comment here">
+			<p class="com-date">To turn on reply notifications, <a href="">click here</a>.</p>
+			<button class="submit">Submit Comment</button>
+		</form>
 		<div class="commentor">
 			<div class="com-head">
-			<img src="images/login-icon.png" alt="Commentor Avatar">
-			<h3>Dude's Name</h3>
+			<img src="images/login-icon-2.png" alt="Commentor Avatar">
+			<h3>Nathanial Bumperty</h3>
+			<div class="votes">
+				<div class="positive">+9</div>
+				<div class="negative">-4</div>
+				<div class="outcome">5</div>
+			</div>
 			</div>
 			<div class="com-body">
 				<p class="com-date">3-3-2017 2:45 PM</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet modi non earum, pariatur veniam sapiente laboriosam iusto minus dolore, quia quo at et debitis voluptatibus quos amet architecto eius corporis.</p>
-				<p>Aut magnam fugit nemo alias possimus, aperiam eligendi ea cupiditate. Saepe rem, aliquid veritatis, esse ducimus illo soluta quaerat labore delectus enim recusandae ex ea debitis. Pariatur non commodi tempora?</p>
-				<p>Perspiciatis earum quas vel dolorum ex atque ab animi non assumenda aut. Quod distinctio, asperiores porro eius maiores voluptatum rem nostrum minus, ducimus ipsum optio, harum sunt totam molestias perferendis.</p>
-				<p>Ea voluptate delectus mollitia praesentium totam odit, modi dicta culpa officia eaque! Temporibus atque voluptatem laboriosam, reprehenderit autem cumque nulla perferendis pariatur dicta, totam, ut nisi sint veniam vero doloremque.</p>
+				<p>"Italian-American Civil Rights League"</p>
+				<p>Wouldn't be the last time someone creates a fake civil rights group to cover up their crimes. Scientology has a few...</p>
 			</div>
+			<div class="reply">Reply</div>
 		</div>
 		<div class="commentor">
 			<div class="com-head">
-			<img src="images/login-icon.png" alt="Commenter Avatar" class="com-pic">
-			<h3>Dude's Name</h3>
+			<img src="images/login-icon-1.png" alt="Commenter Avatar" class="com-pic">
+			<h3>Are_doubleyou</h3>
+			<div class="votes">
+				<div class="positive">+4</div>
+				<div class="negative">-1</div>
+				<div class="outcome">3</div>
+			</div>
 			</div>
 			<div class="com-body">
 				<p class="com-date">3-3-2017 2:45 PM</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet modi non earum, pariatur veniam sapiente laboriosam iusto minus dolore, quia quo at et debitis voluptatibus quos amet architecto eius corporis.</p>
-				<p>Aut magnam fugit nemo alias possimus, aperiam eligendi ea cupiditate. Saepe rem, aliquid veritatis, esse ducimus illo soluta quaerat labore delectus enim recusandae ex ea debitis. Pariatur non commodi tempora?</p>
+				<p>#0. I remember that Suicide Squad also faced a terrible set back during production.</p>
+				<p>Sahara has Steve Zahn bickering with Matthew McConaughey. That level of charm is worth the mediocre plot.</p>
 			</div>
+			<div class="reply">Reply</div>
 		</div>
 		<div class="commentor">
 			<div class="com-head">
-			<img src="images/login-icon.png" alt="Commenter Avatar" class="com-pic">
-			<h3>Dude's Name</h3>
+			<img src="images/login-icon-4.png" alt="Commenter Avatar" class="com-pic">
+			<h3>Zach Thadeus</h3>
+			<div class="votes">
+				<div class="positive">+2</div>
+				<div class="negative">-9</div>
+				<div class="outcome">-7</div>
+			</div>
 			</div>
 			<div class="com-body">
 				<p class="com-date">3-3-2017 2:45 PM</p>
-				<p>Perspiciatis earum quas vel dolorum ex atque ab animi non assumenda aut. Quod distinctio, asperiores porro eius maiores voluptatum rem nostrum minus, ducimus ipsum optio, harum sunt totam molestias perferendis.</p>
+				<p>Congrats Cussler, you've made sure nobody will ever attempt to make another one of your books into a movie durring your lifetime.</p>
 			</div>
+			<div class="reply">Reply</div>
 		</div>
 		<div class="commentor">
 			<div class="com-head">
-			<img src="images/login-icon.png" alt="Commenter Avatar" class="com-pic">
-			<h3>Dude's Name</h3>
+			<img src="images/login-icon-3.jpg" alt="Commenter Avatar" class="com-pic">
+			<h3>Bliteranu</h3>
+
+			<div class="votes">
+				<div class="positive">+9</div>
+				<div class="negative">-5</div>
+				<div class="outcome">4</div>
+			</div>
+
 			</div>
 			<div class="com-body">
 				<p class="com-date">3-3-2017 2:45 PM</p>
-				<p>Aut magnam fugit nemo alias possimus, aperiam eligendi ea cupiditate. Saepe rem, aliquid veritatis, esse ducimus illo soluta quaerat labore delectus enim recusandae ex ea debitis. Pariatur non commodi tempora?</p>
-				<p>Perspiciatis earum quas vel dolorum ex atque ab animi non assumenda aut. Quod distinctio, asperiores porro eius maiores voluptatum rem nostrum minus, ducimus ipsum optio, harum sunt totam molestias perferendis.</p>
-				<p>Ea voluptate delectus mollitia praesentium totam odit, modi dicta culpa officia eaque! Temporibus atque voluptatem laboriosam, reprehenderit autem cumque nulla perferendis pariatur dicta, totam, ut nisi sint veniam vero doloremque.</p>
+				<p>Actually, the full transcript went like this.</p>
+				<p>"So I think I heard something about the company extending maternity leave to ... 12 months, was it?"</p>
+				<p>"WTF, Karen? are you kidding me, are ypu really trying to pull this-"</p>
+				<p>"Oh hold on a second, baby Brandon is fidgeting. No careful baby, don't through up over mummy's computer. It might short out!"</p>
 			</div>
+			<div class="reply">Reply</div>
 		</div>
+		<div class="load-more">Load More</div>
 		</div>
 
 
 	</main>
 	<aside>
-		<div class="ads"><img src="images/ad-block.JPG" alt="adspace"></div>
+		<div class="ads"><img src="images/ad-block-1.JPG" alt="adspace"></div>
 		<div id="viral">
 		<h2>Viral</h2>
 			<a href="cracked-article.html"><figure><img src="images/article-tn-19.JPG" alt="Thumbnail"><figcaption>6 Surprising Things You Learn In The Alt-Right Media Bubble</figcaption></figure></a>			
@@ -384,15 +518,16 @@
 		<div id="links">
 		<ul id="about">
 			<li class="bigger">About</li>
-			<li><a href="">About Us</a></li>
-			<li><a href="">Write For Cracked</a></li>
-			<li><a href="">Contact Us</a></li>
-			<li><a href="">Advertise</a></li>
-			<li><a href="">Careers</a></li>
-			<li><a href="">Sitemap</a></li>
-			<li><a href="">Terms and Conditions</a></li>
-			<li><a href="">Privacy Policy</a></li>
+			<li>About Us</li>
+			<li>Write For Cracked</li>
+			<li>Contact Us</li>
+			<li>Advertise</li>
+			<li>Careers</li>
+			<li>Sitemap</li>
+			<li>Terms and Conditions</li>
+			<li>Privacy Policy</li>
 		</ul>
+
 
 		<ul id="apps">
 			<li class="bigger">Cracked Mobile Apps</li>
@@ -438,12 +573,7 @@
 	</footer>
 </div>
 
-<script>
-	$("#search-button").click(function(){
-	console.log('button clicked')
-    $("#searchBox").toggle();
-});
-</script>
+<script src="cracked.js"></script>
 
 </body>
 </html>

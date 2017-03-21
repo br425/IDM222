@@ -1,18 +1,32 @@
 
 
-var searchButtonEl = document.getElementById('search-button');
-var searchBoxEl = document.getElementById('searchBox');
+	$("#search-button").click(function(){
+		console.log('button clicked');
+	    $("#searchBox").toggleClass('show-search');
+	    $("#search-button").toggleClass('search-icon-clicked');
 
-// searchButtonEl.addEventListener('click',function searchButton() {
-//   console.log('searchButtonEl clicked');
-//     displayBox('search-box');
-// })
-
-// function displayBox() {
-//     console.log('display function executed');
-//    	searchBox.classList.toggle('show-search');
-// }
-
-$("#search-button").click(function(){
-    $("#searchBox").toggle();
 });
+	$(".hamburger-icon").click(function() {
+		console.log('hamburger clicked');
+		$('#hamburger-menu').toggleClass('show-ham');
+	})
+
+	$("#write-for-us").click(function() {
+		console.log('write for us clicked');
+		$('#contact-bg').addClass('show-contact');
+	})
+
+	$("#x-icon").click(function(){
+		console.log('X out clicked');
+		$('#contact-bg').removeClass('show-contact');
+	})
+
+	$("#to-footer").click(function(){
+		console.log('thing clicked');
+		$('#hamburger-menu').removeClass('show-ham');
+	})
+
+	$("#about li").click(function(){
+		console.log('clickarooni');
+		$('#contact-bg').addClass('show-contact');
+	})
